@@ -1,3 +1,5 @@
+//import java.sql.SQLOutput;
+
 public class ExceptionHandling
 {
 
@@ -18,6 +20,13 @@ public class ExceptionHandling
         {
             System.out.println("Value of b=0, Divisible by Zero Error");
         }
+        catch (Exception e) {
+            System.out.println("Array Index out of bound");
+        }
+        /*catch (Exception e){
+            System.out.println(e.toString());
+        }*/
+
 
         System.out.println("END");
 
