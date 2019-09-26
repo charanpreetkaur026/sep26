@@ -12,7 +12,7 @@ public class ExceptionHandling
         int x[]={1,2,3};
         System.out.println("START");
         try {
-            x[4]=1000;
+            x[2]=1000;
             c = a / b;
             System.out.println(" C:\t" + c);
         }
@@ -22,6 +22,9 @@ public class ExceptionHandling
         }
         catch (Exception e) {
             System.out.println("Array Index out of bound");
+        }
+        finally{
+            System.out.println("finally block");
         }
         /*catch (Exception e){
             System.out.println(e.toString());
