@@ -8,7 +8,7 @@ public class ExceptionHandling
         int a=100;
         int b=0;
         int c;
-
+Student s1= new Student(1, "Charan");
         int x[]={1,2,3};
         System.out.println("START");
         try {
@@ -26,6 +26,7 @@ public class ExceptionHandling
         finally{
             System.out.println("finally block");
         }
+
         /*catch (Exception e){
             System.out.println(e.toString());
         }*/
@@ -33,8 +34,13 @@ public class ExceptionHandling
 
         System.out.println("END");
 
+        public void finalize()
+        {
+            System.out.println("Finalize() block");
+        }
 
-
+s1=null;
+        //System.gc();//don't use in practical
 
 
 
